@@ -1,0 +1,27 @@
+/*external code css */
+
+	body {
+		background-color: #FFBD00;
+		font-family: 'Segue UI' , tahoma , geneva, verdana, sans-serif;
+	}
+	p {
+		font-size: 40px;
+		color: aqua;
+		text-align: center;
+		font-style: italic;
+	}
+	p.capitalize {
+		text-transform: uppercase;
+		text-indent: 100px;
+	}
+	a {
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+	div {
+		background-color: violet;
+		width: 60%;
+		border: 30px solid green;
+		padding: 25px;
+		margin: 25px;
+	}
