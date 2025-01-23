@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1
+        {color: red;}
+        #example1a {
+            border: 2px solid black;
+            padding: 50px;
+            background: url(Image/fuyutsuki.jpg);
+            //background-repeat: repeat;
+            background-repeat: repeat-x;
+        }
+        #example1b {
+            border:2px solid black;
+            padding: 50px;
+            height: 70px;
+            background: url(Image/himuro.jpg);
+            // background-repeat: repeat;
+            background-repeat: repeat-y;
+        }
+        #example2 {
+            border: 2px solid black;
+            padding: 55px;
+            background:url(Image/fuyutsuki.jpg);
+            background-repeat: space;
+        }
+        #example3 {
+            border: 1px solid black;
+            padding: 50px;
+            background: url(Image/himuro.jpg);
+            background-repeat: round;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>background-repeat: repeat (repeat X)</h2>
+    <p>Here, the background image is repeated horizontally. The last image will be clipped if it
+        does not fit. This is default:
+    </p>
+    <div id="example1a">
+        <h1>Hello World</h1>
+    </div>
+    <h2>
+        background-repeat: repeat (repeat Y)
+    </h2>
+    <p>Here, the background image is repeated vertically. The last image will be clipped if it
+        does not fit. This is default
+    </p>
+    <div id="example1b">
+        <h1>Hello world</h1>
+    </div>
+
+    <h2>background-repeat: space</h2>
+    <p>Here, the background-image is repeated as much as possible without clipping. The first and
+        last images are pinned to either side of the element, and whitespace is ditributed
+        evenly between the images.
+    </p>
+    <div id="example2">
+        <h1>Hello World</h1>
+    </div>
+
+    <h2>background-repeat: round</h2>
+    <p>Here, the background-image is repeated and squished or stretched , to fill the space (no gaps):</p>
+    <div id="example3">
+        <h1>Hello World!</h1>
+    </div>
+    
+</body>
+</html>
