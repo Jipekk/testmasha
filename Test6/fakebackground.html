@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box {
+            height: 70%;
+            text-align: center;
+        }
+        .bg-box {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            overflow: hidden;
+        }
+        .bg-row::before,
+        .bg-row::after {
+            display: block;
+            margin: 3px 0 0;
+            height: 80px;
+            background:round url(Image/naotomori.webp) top left/ 50px 55px ;
+            content: "";
+        }
+        .bg-row::after {
+            margin: 30px 3px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Fake Background Offset</h1>
+        <p>A box, absolute positioned satck below content, with a number of pair of rows with background:
+            round toto avoid clipping, the lower is one image narrower to offset the image in beetween</p>
+
+            <p>The rows need to be repeated in the html in order to fill the content exapanding height
+                of the box.
+            </p>
+            <div class="bg-box">
+                <div class="bg-row"></div>
+                <div class="bg-row"></div>
+                <div class="bg-row"></div>
+                <div class="bg-row"></div>
+            </div>
+            </div>
+</body>
+</html>
